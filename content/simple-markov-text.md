@@ -1,6 +1,6 @@
 Title: Markov Poem
 Date: 2015-4-7 10:20
-Category: java
+Tags: clojure, java
 
 I had an assignment to make a poem generator for my computer science class but it involved arrays and random choice. I thought I could do a little bit better so I made a markov chain text generator.
 
