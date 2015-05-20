@@ -29,4 +29,17 @@ The final one is called the idempotent property. When performing an operation mu
 Idempotent => (+ a a) = a
 ```
 
-Luckily for you these are already well known properties in mathematics and together they are called
+Luckily for you these are already well known properties in mathematics and together they make up (upper and lower) semi-lattices. An example of a semi-lattice is max on two integers or union on two sets. When given a list of integers when max is applied from any starting point (communicative property), on any random order of integers (associative property), and any number of duplicate integers (idempotent property) you will always get the correct max for that list of integers:
+```
+    list                     same list
+  w/ dupes := 8 9 5 7 1 9   random order := 5 9 7 1 8
+              \ / \ / \ /                   \ / \ / |
+max =>         9   7   9                     9   7  8
+                \ /  /                        \ /  /
+max =>           9  9                          9  8
+                  \/                            \/
+max =>             9                             9
+``` 
+The same goes for sets using the union operation.
+
+But you run into a problem using this as the only basis for creating useful CRDTs. As an example you could construct, merely as an example,  a CRDT-like that we will call 'bad-LWW' that forms a semi-lattice but loses useful bits of your information. For this bad-LWW we will make the semi-lattice keep the data of the highest wall-clock time-stamp and the operation will be called 'recent'. Now assuming all the wall-clocks are in sync (which is an impossible assumption for a number of reasons*) whenever we call recent on two bad-LWW it will choose the latest. No matter the order a computer in a cluster receives bad-LWWs and then calls recent on them it will reach the same truth. If it gets duplicates of the same bad-LWW it will always reach the same state. For this demonstration a tuple of [] 
