@@ -1,5 +1,6 @@
-Intro to CRDT's
-===
+title: Intro to CRDT's
+Date: 2015-5-20 10:20
+Tags: CRDT
 
 To begin to understand Conflict-free Replicated Data Types it would be good to first understand why it is that we even need them in the first place and what problem they solve.
 
