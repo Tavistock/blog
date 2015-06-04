@@ -31,11 +31,11 @@ SOCIAL = (('@github', 'https://github.com/Tavistock'),
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 THEME = 'themes/paperlite'
 
-ATIC_PATHS = ['src', 'voxel', 'extra/robots.txt', 'extra/favicon.ico']
+STATIC_PATHS = ['homepage.html', 'src', 'voxel', 'extra/robots.txt', 'extra/favicon.ico']
 EXTRA_PATH_METADATA = {
         'extra/robots.txt': {'path': 'robots.txt'},
         'extra/favicon.ico': {'path': 'favicon.ico'}

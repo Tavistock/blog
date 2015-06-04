@@ -1,0 +1,20 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="263" viewBox="0 0 300 263" height="305">
+<g id="layerGroup" transform="translate(-156,-109)">
+<g id="obj_1">
+<g id="obj_11" transform="matrix(1,0,0,1,156.324,66.796)" opacity="1" display="inline">
+<path d="M 300 259.807 L 150 346.409 L 0 259.807 L 0 86.602 L 0.001 86.602 L 150 0 L 299.999 86.602 L 300 86.602 L 300 259.807 Z " fill-opacity="1" fill="url(#obj_11_grad_pat_fill)" stroke-opacity="1" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter">
+</path>
+<defs><linearGradient x2="0.75390625" y2="0.27734375" x1="0.26171875" y1="0.73828125" id="obj_11_grad_pat_fill"><stop offset="0" stop-color="#f79e48" stop-opacity="0.99609375"/><stop offset="1" stop-color="#f4f4f4" stop-opacity="0.99609375"/></linearGradient></defs>
+</g>
+<g id="obj_6" transform="matrix(1,0,0,1,156.324,66.796)" opacity="1" display="inline">
+<g id="obj_12" transform="matrix(1,0,0,1,0,86.603)" opacity="1" display="inline">
+<path d="M 0 173.2047 L 0 0 L 75.0005 43.3015 L 75.0005 129.903 L 150 173.2046 L 150 259.807 L 0 173.2047 Z " fill-opacity="0.25" fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/><defs/></g>
+<g id="obj_4" transform="matrix(0.8965754721680536,-0.5176380902050415,0.8965754721680534,0.5176380902050416,-0.00026622013183441595,86.60249999999998)" opacity="1" display="inline">
+<path d="M 0 0 L 167.303 0 L 167.303 167.303 L 0 167.303 L 0 0 Z " fill-opacity="0" fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/><defs/></g>
+<g id="obj_13" transform="matrix(1,0,0,1,150,86.603)" opacity="1" display="inline"><path d="M 150 173.2047 L 0 259.807 L 0 173.2047 L 0.0004 173.205 L 75.0005 129.903 L 74.9995 129.9024 L 74.9995 43.3015 L 150 0 L 150 173.2047 Z " fill-opacity="0.05" fill="#4c4c4c" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/><defs/></g></g>
+<g id="obj_7" transform="matrix(1,0,0,1,231.324,153.397)" opacity="1" display="inline">
+<g id="obj_8" transform="matrix(1,0,0,1,0,0.001)" opacity="1" display="inline"><path d="M 0 129.904 L 75 86.603 L 75 0 L 0 43.301 L 0 129.904 Z " fill-opacity="0.05" fill="#4c4c4c" stroke-opacity="1" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/><defs/></g>
+<g id="obj_9" transform="matrix(1,0,0,1,0,86.603)" opacity="1" display="inline"><path d="M 0 43.301 L 75 86.603 L 150 43.301 L 75 0 L 0 43.301 Z " fill-opacity="1" fill="none" stroke-opacity="1" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/><defs/></g>
+<g id="obj_10" transform="matrix(1,0,0,1,75,0)" opacity="1" display="inline"><path d="M 0 0 L 0 86.603 L 74.999 129.904 L 74.999 43.301 L 0 0 Z " fill-opacity="0.25" fill="#ffffff" stroke-opacity="1" stroke="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/><defs/></g></g></g></g>
+</svg>

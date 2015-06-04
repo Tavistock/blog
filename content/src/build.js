@@ -8,98 +8,98 @@ var Anchor = Scroll.Element;
 var Link = Scroll.Link;
 var responsiveWidth = 960;
 
-var aboutText = React.createElement("div", null, 
-	React.createElement("p", null, "Hello, my name is Travis, and I'm a Python, Javascript, and ", React.createElement("a", {href: "http://clojure.org"}, "Clojure"), " web developer as well as a soon-to-be graduate of the Philosophy program at University of North Carolina Asheville."), 
-	React.createElement("h2", {id: "skills"}, "Skills"), 
+var aboutText = React.createElement("div", null,
+	React.createElement("p", null, "Hello, my name is Travis, and I'm a Python, Javascript, and ", React.createElement("a", {href: "http://clojure.org"}, "Clojure"), " web developer as well as a soon-to-be graduate of the Philosophy program at University of North Carolina Asheville."),
+	React.createElement("h2", {id: "skills"}, "Skills"),
 
-	React.createElement("ul", null, 
-		React.createElement("li", null, "Python, Django"), 
-		React.createElement("li", null, "JavaScript, jQuery, Reactjs"), 
-		React.createElement("li", null, "Clojure/Clojurescript, Om"), 
-		React.createElement("li", null, "HTML5, CSS3, Less/Sass"), 
-		React.createElement("li", null, "Linux, Bash, Heroku, Vagrant"), 
+	React.createElement("ul", null,
+		React.createElement("li", null, "Python, Django"),
+		React.createElement("li", null, "JavaScript, jQuery, Reactjs"),
+		React.createElement("li", null, "Clojure/Clojurescript, Om"),
+		React.createElement("li", null, "HTML5, CSS3, Less/Sass"),
+		React.createElement("li", null, "Linux, Bash, Heroku, Vagrant"),
 		React.createElement("li", null, "Git, GitHub, Bitbucket")
 	)
 );
 
-var nav = React.createElement("nav", {className: "nav"}, 
-	React.createElement("ul", null, 
-		React.createElement("li", null, React.createElement(Link, {to: "about", smooth: true}, "About")), 
-		React.createElement("li", null, React.createElement(Link, {to: "projects", smooth: true}, "Projects")), 
-		React.createElement("li", null, React.createElement(Link, {to: "contact", smooth: true}, "Contact")), 
+var nav = React.createElement("nav", {className: "nav"},
+	React.createElement("ul", null,
+		React.createElement("li", null, React.createElement(Link, {to: "about", smooth: true}, "About")),
+		React.createElement("li", null, React.createElement(Link, {to: "projects", smooth: true}, "Projects")),
+		React.createElement("li", null, React.createElement(Link, {to: "contact", smooth: true}, "Contact")),
 		React.createElement("li", null, React.createElement("a", {href: ".."}, "Blog"))
 	)
 )
 
-var fold = React.createElement("div", {className: "fold"}, 
-	React.createElement("h1", {className: "fold__top"}, "Web Developer"), 
-	React.createElement("div", {className: "fold__synopsis"}, 
-		React.createElement("div", {className: "fold__logo"}, 
-			"Travis", 
-			React.createElement("br", null), 
+var fold = React.createElement("div", {className: "fold"},
+	React.createElement("h1", {className: "fold__top"}, "Web Developer"),
+	React.createElement("div", {className: "fold__synopsis"},
+		React.createElement("div", {className: "fold__logo"},
+			"Travis",
+			React.createElement("br", null),
 			"McNeill"
-		), 
+		),
 		React.createElement("img", {className: "fold__image", src: "./src/images/logo.svg"})
-	), 
+	),
 	nav
 );
 
-var aboutAside = React.createElement(Anchor, {className: "about__aside", name: "about"}, 
-	React.createElement("div", {className: "about__title"}, "About"), 
-	React.createElement("img", {className: "about__image", 
-		src: "./src/images/travis.jpg"}), 
+var aboutAside = React.createElement(Anchor, {className: "about__aside", name: "about"},
+	React.createElement("div", {className: "about__title"}, "About"),
+	React.createElement("img", {className: "about__image",
+		src: "./src/images/travis.jpg"}),
 	nav
 );
 
-var about = React.createElement("div", {className: "about"}, 
-	aboutAside, 
+var about = React.createElement("div", {className: "about"},
+	aboutAside,
 	React.createElement("div", {className: "about__section"}, aboutText)
 );
 
-var projectsAside = React.createElement(Anchor, {name: "projects"}, 
-	React.createElement("div", {className: "projects__title"}, "Projects"), 
+var projectsAside = React.createElement(Anchor, {name: "projects"},
+	React.createElement("div", {className: "projects__title"}, "Projects"),
 	nav
 );
 
 var Frame = React.createClass({displayName: "Frame",
 	render: function () {
 	return React.createElement("div", {
-	className: "frame"}, 
-		React.createElement("a", {href: this.props.href}, 
-			React.createElement("div", {className: "frame__bar"}, 
-				React.createElement("span", null), 
-				React.createElement("span", null), 
+	className: "frame"},
+		React.createElement("a", {href: this.props.href},
+			React.createElement("div", {className: "frame__bar"},
+				React.createElement("span", null),
+				React.createElement("span", null),
 				React.createElement("span", null)
-			), 
+			),
 			React.createElement("img", {src: this.props.src})
 		)
 	);}
 });
 
-var projectsSection = React.createElement("div", null, 
-	React.createElement(Frame, {href: "https://github.com/Tavistock/Voxel-Fractal", src: "./src/images/fractal.png"}), 
-	React.createElement("h1", null, React.createElement("a", {href: "https://github.com/Tavistock/Voxel-Fractal"}, "Voxel Fractal")), 
-	React.createElement("p", null, "A Javascript program for viewing and manipulating a 3d fractal made out of cubes. It was an experiment to see if I could implement a an app just based on some image I saw on twitter."), 
-	React.createElement(Frame, {href: "https://github.com/Tavistock/interval_tree_clocks", src: "./src/images/itc.png"}), 
-	React.createElement("h1", null, React.createElement("a", {href: "https://github.com/Tavistock/interval_tree_clocks"}, "Interval Tree Clocks")), 
-	React.createElement("p", null, "An implementation of the interval clocks described in a ", React.createElement("a", {href: "http://gsd.di.uminho.pt/members/cbm/ps/itc2008.pdf"}, "paper"), ". The purpose was to better understand distributed computing and practice porting code from different programming languages."), 
-	React.createElement(Frame, {href: "https://github.com/Tavistock/mo.da.sh", src: "./src/images/modash.png"}), 
-	React.createElement("h1", null, React.createElement("a", {href: "https://github.com/Tavistock/mo.da.sh"}, "Modash")), 
+var projectsSection = React.createElement("div", null,
+	React.createElement(Frame, {href: "https://github.com/Tavistock/Voxel-Fractal", src: "./src/images/fractal.png"}),
+	React.createElement("h1", null, React.createElement("a", {href: "https://github.com/Tavistock/Voxel-Fractal"}, "Voxel Fractal")),
+	React.createElement("p", null, "A Javascript program for viewing and manipulating a 3d fractal made out of cubes. It was an experiment to see if I could implement an app just based on some image I saw."),
+	React.createElement(Frame, {href: "https://github.com/Tavistock/interval_tree_clocks", src: "./src/images/itc.png"}),
+	React.createElement("h1", null, React.createElement("a", {href: "https://github.com/Tavistock/interval_tree_clocks"}, "Interval Tree Clocks")),
+	React.createElement("p", null, "An implementation of the interval clocks described in a ", React.createElement("a", {href: "http://gsd.di.uminho.pt/members/cbm/ps/itc2008.pdf"}, "paper"), ". The purpose was to better understand distributed computing and practice porting code from different programming languages."),
+	React.createElement(Frame, {href: "https://github.com/Tavistock/mo.da.sh", src: "./src/images/modash.png"}),
+	React.createElement("h1", null, React.createElement("a", {href: "https://github.com/Tavistock/mo.da.sh"}, "Modash")),
 	React.createElement("p", null, "I needed a better newtab screen for google chrome so I wrote an extension using Javascript. It includes a scraper written in Python to get all the images it uses for backgrounds.")
 );
 
-var projects = React.createElement(Floater, {group: "projects", 
-	aside: projectsAside, 
-	section: projectsSection, 
+var projects = React.createElement(Floater, {group: "projects",
+	aside: projectsAside,
+	section: projectsSection,
 	width: responsiveWidth});
 
-var contact = React.createElement(Anchor, {className: "contact", name: "contact"}, 
-	React.createElement("aside", {className: "contact__aside"}, 
+var contact = React.createElement(Anchor, {className: "contact", name: "contact"},
+	React.createElement("aside", {className: "contact__aside"},
 	React.createElement("div", {className: "contact__title"}, "Contact", React.createElement("wbr", null), "/Links")
-	), 
-	React.createElement("section", {className: "contact__section"}, 
-	React.createElement("ul", null, 
-		React.createElement("li", null, "Github: ", React.createElement("a", {href: "https://github.com/Tavistock"}, "Tavistock")), 
+	),
+	React.createElement("section", {className: "contact__section"},
+	React.createElement("ul", null,
+		React.createElement("li", null, "Github: ", React.createElement("a", {href: "https://github.com/Tavistock"}, "Tavistock")),
 		React.createElement("li", null, "Email: ", React.createElement("a", {href: "mailto:tavistock91@gmail.com"}, "tavistock91@gmail.com"))
 	)
 	)
@@ -107,7 +107,7 @@ var contact = React.createElement(Anchor, {className: "contact", name: "contact"
 
 React.render(
 	React.createElement(Loader, {
-	initial: fold}, 
+	initial: fold},
 		[about, projects, contact]
 	),
 	document.getElementById('info-sections'));
@@ -221,7 +221,7 @@ var Element = React.createClass({
      */
 
     var className = this.props.className || "";
-    
+
     var props = assign({}, this.props, {
       className: this.props.className
     });
@@ -22489,13 +22489,13 @@ var Floater = React.createClass({
 
 		var aside = this.props.aside ? this.props.aside : React.createElement("div", {className: this.props.group + '__title'}, this.props.title)
 
-		return React.createElement("div", {id: this.props.group, 
-		className: this.props.group}, 
-		React.createElement("aside", {className: this.props.group + '__aside', style: asideStyle, ref: "aside"}, 
+		return React.createElement("div", {id: this.props.group,
+		className: this.props.group},
+		React.createElement("aside", {className: this.props.group + '__aside', style: asideStyle, ref: "aside"},
 		aside
-		), 
-		React.createElement("section", {className: this.props.group + '__section', 
-		ref: "section"}, 
+		),
+		React.createElement("section", {className: this.props.group + '__section',
+		ref: "section"},
 		this.props.section
 		)
 		);
@@ -22547,14 +22547,14 @@ var Loader = React.createClass({displayName: "Loader",
 		} else {
 			child = {visibility: "hidden"};
 		}
-		return React.createElement("div", null, 
+		return React.createElement("div", null,
 		React.createElement(CSSTransition, {
-		transitionName: "loader", 
-		transitionAppear: true, 
-		transitionEnter: false, 
-		transitionLeave: false}, 
+		transitionName: "loader",
+		transitionAppear: true,
+		transitionEnter: false,
+		transitionLeave: false},
 			this.props.initial
-		), 
+		),
 		React.createElement("div", {style: child}, this.props.children)
 		)
 	}
