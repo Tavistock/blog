@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ page.title|striptags|e }} {%if page.subtitle %} - {{ page.subtitle|striptags|e }} {% endif %} · {{ super() }}
+{% endblock %}
+
+{% block head_meta_tag %}
+{{ super() }}
+{% from 'modules/smo_metadata.html' import smo_metadata with context %}
+{{ smo_metadata(page) }}
+{% endblock head_meta_tag %}
+
+{% block content %}
+<article>
+  <div id="article_title">
+    <h3><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h3>
+  </div>
+  <div id="article_text">
+    {{ page.content }}
+  </div>
+</article>
+{% endblock %}
+
+{% block footer %}
+<p><a href="{{ SITEURL }}/" class="button_accent">&larr; Back to Index</a></p>
+{% endblock %}
