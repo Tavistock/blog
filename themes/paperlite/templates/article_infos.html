@@ -1,8 +1,0 @@
-<div class="post-info">
-        <p class="published" title="{{ article.date.isoformat() }}">
-	{{ article.date|strftime('%d %B %Y') }}
-        </p>
-{% include 'taglist.html' %}
-{% import 'translations.html' as translations with context %}
-{{ translations.translations_for(article) }}
-</div><!-- /.post-info -->

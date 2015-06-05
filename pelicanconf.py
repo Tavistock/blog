@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Travis McNeill'
-SITENAME = u'tavistock'
+SITENAME = u'Travis McNeill'
+TAGLINE = 'remember to breathe'
 SITEURL = ''
-SIGNATURE = 'travis mcneill &#8756 tavistock91@gmail.com'
 
 PATH = 'content'
 
@@ -25,18 +25,20 @@ LINKS = (('dosync', 'http://swannodette.github.io/'),
         ('rigsomelight', 'http://rigsomelight.com/'),)
 
 # Social widget
-SOCIAL = (('@github', 'https://github.com/Tavistock'),
-        ('@twitter', 'https://twitter.com/tavistock_esq'),)
+SOCIAL = (('Github', 'https://github.com/Tavistock'),
+          ('Twitter', 'https://twitter.com/tavistock_esq'),)
+
+TWITTER_USERNAME = 'https://twitter.com/tavistock_esq'
+USER_LOGO_URL = 'images/logo.svg'
 
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-THEME = 'themes/paperlite'
+THEME = 'themes/pelican-svbtle-responsive'
 
-STATIC_PATHS = ['homepage.html', 'src', 'voxel', 'extra/robots.txt', 'extra/favicon.ico']
+STATIC_PATHS = ['images','voxel', 'extra/robots.txt']
 EXTRA_PATH_METADATA = {
         'extra/robots.txt': {'path': 'robots.txt'},
-        'extra/favicon.ico': {'path': 'favicon.ico'}
         }
