@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Travis McNeill'
 SITENAME = u'Travis McNeill'
 TAGLINE = 'Embrace Uncertainty'
-SITEURL = 'http://tavistock.github.io/blog'
+SITEURL = ''
 
 PATH = 'content'
 
